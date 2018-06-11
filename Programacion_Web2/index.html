@@ -1,8 +1,3 @@
-<?php
-	require_once("counter/conexion.php");
-	$insert = "UPDATE contador SET visitas = visitas + 1 WHERE id = '1' ";
-	$update = $connect->query($insert);
-?>
 
 <!DOCTYPE HTML>
 <html lang="es">
@@ -14,21 +9,6 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 <script src="js/jquery.min.js"></script>
- <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-        width:100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 200px;
-        width: 100%; 
-        margin: 0;
-        padding: 0;
-      }
-    </style>
 </head>
 <body>
 <!-- @inicioheader -->
@@ -40,14 +20,13 @@
         		 <ul>
 					<li class="active"><a class="scroll" href="#inicio">Inicio</a></li>
 					<li><a class="scroll" href="#caracteristicas">Características</a></li>
-					<li><a class="scroll" href="#productos">Productos</a></li>
+					<li><a class="scroll" href="#productos">Nuestros Productos</a></li>
 					<li><a class="scroll" href="#equipo">Nuestro Equipo</a></li>
 					<li><a href="blogprincipal.html">Blog</a></li>
-					<li><a  class="scroll" href="#contact">Contacto</a></li>
-					<li><a href="login/index.php">Acceso</a></li>
+					<li><a  class="scroll" href="#contact">Contáctanos</a></li>
 				</ul>
         </nav>
-         <div class="logo"><a href="index.php"><img src="images/logo.png" alt="Image 1"></a></div>
+         <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Image 1"></a></div>
         <a href="#" id="navbtn">Nav Menu</a>
         <div class="clear"> </div>
       </header><!-- @Fin #topnav -->
@@ -62,17 +41,17 @@
 				<div class="da-slide">
 					<h2>Artesanía hecha con el corazón</h2>
 					<p>Es el resultado de la historia: Dedicación, paciencia, entrega y amor.</p>
-					<a href="blogprincipal.html" class="da-link">Leer más...</a>
+					<a href="#" class="da-link">Leer más...</a>
 				</div>
 				<div class="da-slide">
 					<h2>Es nuestra identidad</h2>
 					<p>Más que un objeto, son horas de experimentos y detalles.</p>
-					<a href="blogprincipal.html" class="da-link">Leer más...</a>
+					<a href="#" class="da-link">Leer más...</a>
 				</div>
 				<div class="da-slide">
 					<h2>Es nuestro sello</h2>
 					<p>Más que manualidad, es un momento de nuestra vida.</p>
-					<a href="blogprincipal.html" class="da-link">Leer más...</a>
+					<a href="#" class="da-link">Leer más...</a>
 				</div>
 				<nav class="da-arrows">
 					<span class="da-arrows-prev"></span>
@@ -103,25 +82,25 @@
 					 		<img src="images/round1.png" alt="Image 1">
 					 		<h3>Diseño</h3>
 					 		<p>Nuestros productos estan pensados y elaborados por los mejores artesanos del país. </p>
-				     		<div class="button"><span><a href="blogart1.html">Leer más...</a></span></div>
+				     		<div class="button"><span><a href="#">Leer más...</a></span></div>
 						</div>
 						<div class="images_1_of_4">
 							 <img src="images/round2.png" alt="Image 1">
 							 <h3>Exclusividad</h3>
 							 <p>Nuestros productos llevan su marca única y personal: son únicos y te inspirarán.</p>
-						     <div class="button"><span><a href="blogart1.html">Leer más...</a></span></div>
+						     <div class="button"><span><a href="#">Leer más...</a></span></div>
 						</div>
 						<div class="images_1_of_4">
 							 <img src="images/round3.png" alt="Image 1">
 							 <h3>Detalle</h3>
 							 <p>Nos empeñamos en mimar a cada producto hasta en su más mínimo detalle. </p>
-						     <div class="button"><span><a href="blogart1.html">Leer más...</a></span></div>
+						     <div class="button"><span><a href="#">Leer más...</a></span></div>
 						</div>
 						<div class="images_1_of_4">
 							 <img src="images/round4.png" alt="Image 1">
 							 <h3>Talento</h3>
 							 <p>Somos un equipo de trabajo que desborda creatividad, entusiasmo y energía.</p>
-						     <div class="button"><span><a href="blogart1.html">Leer más...</a></span></div>
+						     <div class="button"><span><a href="#">Leer más...</a></span></div>
 						</div>
 						<div class="clear"> </div>
 		 </div>
@@ -348,279 +327,43 @@
 			<div class="contact-form">
 				<div class="para-contact">
 					<h4>Pónte en Contacto con Nosotros</h4>
-					<p>Estamos muy contentos de tu visita, y como deseamos que continúes en contacto con nosotros por favor diligencia los datos y cuéntanos tus dudas. ¡Con gusto te asesoramos!</p> 
-				   	<div class="social_2 social_3">	
+					<p>Estamos muy contentos de tu visita, y como deseamos que continúes en contacto con nosotros por favor diligencia los datos y cuéntanos tus dudas. ¡Con gusto te asesoramos!</p>
+				
+				 	<div class="social_2 social_3">	
 			           <ul>	
 						    <li class="facebook"><a href="#"><span> </span></a></li>
 						    <li class="twitter"><a href="#"><span> </span></a></li>	 	
 							<li class="google"><a href="#"><span> </span></a></li>
 					  </ul>
 		 		  </div>
+		 		  <div class="get-intouch-left-address">
+				  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.427420098302!2d-74.03159275106442!3d4.6955611396291035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aa8752c0007%3A0x7949e7ccfdcea694!2sCl.+119+%236a-33%2C+Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1527812100147" width="100%" height="200px" frameborder="0" style="border:0" allowfullscreen></iframe>
 						<p>Calle 119 Nº 6A 33, Usaquén</p>
 						<p>Bogotá DC. Colombia.</p>
 						<p>(571) 3737396</p>
 						<p><a href="mailto:dbaquero91@gmail.com"> contacto@palo&palito.com</a></p>
-						<p>Eres el visitante número <?php
-							require_once("counter/conexion.php");
-							$consulta = $connect->query("SELECT * FROM contador WHERE id = '1' ");
-							$registro = mysqli_fetch_array($consulta);
-							do{
-								$desc = $registro['visitas'];
-								echo "$desc";
-							}
-							while ($registro = mysqli_fetch_array($consulta));
-							?> a nuestra página</p>
 					</div>
+					<div class="clear"> </div>	
 				</div>
 						<div class="form">
 				  			<form method="post" action="#">
-
-<form name="contactform" method="post" action="send_form_email.php"> 
-	<?php
-if(isset($_POST['email'])) {
- 
-    // Edita las dos líneas siguientes con tu dirección de correo y asunto personalizados
- 
-    $email_to = "
- dbaquero91@gmail.com";
- 
-    $email_subject = "Formulario Contáctenos Palo&Palito";   
- 
-    function died($error) {
- 
-        // si hay algún error, el formulario puede desplegar su mensaje de aviso
- 
-        echo "Lo sentimos, hubo un error en sus datos y el formulario no puede ser enviado en este momento. ";
- 
-        echo "Detalle de los errores.<br /><br />";
-        
-        echo $error."<br /><br />";
- 
-        echo "Porfavor corrija estos errores e inténtelo de nuevo.<br /><br />";
-        die();
-    }
- 
-    // Se valida que los campos del formulairo estén llenos
- 
-    if(!isset($_POST['first_name']) ||
- 
-        !isset($_POST['last_name']) ||
- 
-        !isset($_POST['email']) ||
- 
-        !isset($_POST['telephone']) ||
- 
-        !isset($_POST['message'])) {
- 
-        died('Lo sentimos pero parece haber un problema con los datos enviados.');       
- 
-    }
- //En esta parte el valor "name" nos sirve para crear las variables que recolectaran la información de cada campo
-    
-    $first_name = $_POST['first_name']; // requerido
- 
-    $last_name = $_POST['last_name']; // requerido
- 
-    $email_from = $_POST['email']; // requerido
- 
-    $telephone = $_POST['telephone']; // no requerido 
-
-    $message = $_POST['message']; // requerido
- 
-    $error_message = "Error";
-
-//En esta parte se verifica que la dirección de correo sea válida 
-    
-   $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
- 
-  if(!preg_match($email_exp,$email_from)) {
- 
-    $error_message .= 'La dirección de correo proporcionada no es válida.<br />';
- 
-  }
-
-//En esta parte se validan las cadenas de texto
-
-    $string_exp = "/^[A-Za-z .'-]+$/";
-
-  if(!preg_match($string_exp,$first_name)) {
- 
-    $error_message .= 'El formato del nombre no es válido<br />';
- 
-  }
- 
-  if(!preg_match($string_exp,$last_name)) {
- 
-    $error_message .= 'el formato del apellido no es válido.<br />';
- 
-  }
- 
-  if(strlen($message) < 2) {
- 
-    $error_message .= 'El formato del texto no es válido.<br />';
- 
-  }
- 
-if(strlen($error_message) < 0) {
-died($error_message);
-}
- 
-//A partir de aqui se contruye el cuerpo del mensaje tal y como llegará al correo
-
-    $email_message = "Contenido del Mensaje.\n\n";
- 
-     
- 
-    function clean_string($string) {
- 
-      $bad = array("content-type","bcc:","to:","cc:","href");
- 
-      return str_replace($bad,"",$string);
- 
-    }
- 
-     
- 
-    $email_message .= "Nombre: ".clean_string($first_name)."\n";
- 
-    $email_message .= "Apellido: ".clean_string($last_name)."\n";
- 
-    $email_message .= "Email: ".clean_string($email_from)."\n";
- 
-    $email_message .= "Teléfono: ".clean_string($telephone)."\n";
- 
-    $email_message .= "Mensaje: ".clean_string($message)."\n";
-  
- 
-//Se crean los encabezados del correo
- 
-$headers = 'From: '.$email_from."\r\n".
- 
-'Reply-To: '.$email_from."\r\n" .
- 
-'X-Mailer: PHP/' . phpversion();
- 
-@mail($email_to, $email_subject, $email_message, $headers);  
- 
-?>
- 
- 
- 
-<!-- incluye aqui tu propio mensaje de Éxito-->
- 
-Gracias! Nos pondremos en contacto contigo a la brevedad
- 
- 
-<?php
- 
-}
- 
-?>
-
-<input type="text" name="first_name" class="textbox" value=" Nombres*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombres*';}"required>
-<input type="text" name="last_name" class="textbox" value=" Apellidos*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellidos*';}"required>
-<input type="text" name="email" class="textbox" value=" Correo Electrónico*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Correo Electrónico*';}"required>
-<input type="text" name="telephone" class="textbox" value=" Teléfono*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Teléfono*';}"required>
-<div>
-	<textarea name="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Mensaje';}">Mensaje</textarea>
-</div>
-
- <td colspan="2" style="text-align:center">
- 	<div class="button send_button">
-  <input type="submit" value="Enviar">   <a send_form_email.php></a>
-  								</div>
- </td>
-
-</form>
-								
+							    	<input type="text" class="textbox" value=" Nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}"required>
+							    	<input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required>
+										<div class="clear"> </div>
+								    <div>
+								    	<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Mensaje';}">Mensaje</textarea>
+								    </div>
+								<div class="button send_button">
+											   	 <input type="submit" value="Enviar">
+								</div>
 								<div class="clear"> </div>
 							</form>
 						</div>
 						<a class="mov-top" href="#inicio1"> <span> </span></a>
 					 <div class="clear"> </div>
 				</div>
-				<h2>Encuéntranos en Google Maps</h2>
   			</div>
      </div>
-
-<!-- Google Maps -->
-	<div id="map"></div>
-    <script>
-      var customLabel = {
-        restaurant: {
-          label: 'R'
-        },
-        bar: {
-          label: 'B'
-        }
-      };
-
-        function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: new google.maps.LatLng(4.695554, -74.031068),
-          zoom: 16.5
-        });
-        var infoWindow = new google.maps.InfoWindow;
-
-          // Change this depending on the name of your PHP or XML file
-          downloadUrl('maps/resultado.php', function(data) {
-            var xml = data.responseXML;
-            var markers = xml.documentElement.getElementsByTagName('marker');
-            Array.prototype.forEach.call(markers, function(markerElem) {
-              var name = markerElem.getAttribute('name');
-              var address = markerElem.getAttribute('address');
-              var type = markerElem.getAttribute('type');
-              var point = new google.maps.LatLng(
-                  parseFloat(markerElem.getAttribute('lat')),
-                  parseFloat(markerElem.getAttribute('lng')));
-
-              var infowincontent = document.createElement('div');
-              var strong = document.createElement('strong');
-              strong.textContent = name
-              infowincontent.appendChild(strong);
-              infowincontent.appendChild(document.createElement('br'));
-
-              var text = document.createElement('text');
-              text.textContent = address
-              infowincontent.appendChild(text);
-              var icon = customLabel[type] || {};
-              var marker = new google.maps.Marker({
-                map: map,
-                position: point,
-                label: icon.label
-              });
-              marker.addListener('click', function() {
-                infoWindow.setContent(infowincontent);
-                infoWindow.open(map, marker);
-              });
-            });
-          });
-        }
-
-
-
-      function downloadUrl(url, callback) {
-        var request = window.ActiveXObject ?
-            new ActiveXObject('Microsoft.XMLHTTP') :
-            new XMLHttpRequest;
-
-        request.onreadystatechange = function() {
-          if (request.readyState == 4) {
-            request.onreadystatechange = doNothing;
-            callback(request, request.status);
-          }
-        };
-
-        request.open('GET', url, true);
-        request.send(null);
-      }
-
-      function doNothing() {}
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn8_WJYtNxJKIbmABcJ4GcpwvWi9mJ-4k&callback=initMap">
-    </script>
-
      <!-- scroll_top_btn -->
 		<script src="js/move-top.js"></script>
 		<script src="js/easing.js"></script>
@@ -647,8 +390,8 @@ Gracias! Nos pondremos en contacto contigo a la brevedad
 			});
 		});
 	</script>
-			 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
 
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
 <!-- @fincontactenos -->
 </body>
 </html>		
